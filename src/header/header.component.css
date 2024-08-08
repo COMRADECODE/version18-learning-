@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+.startlink {
+    display: flex;
+    align-items: center;
+}
+
+.startlink div {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+   
+}
+.brdblack{
+    border: 1px solid #fff;
+}
+
+.button div {
+    display: flex;
+    gap: 10px;
+}
