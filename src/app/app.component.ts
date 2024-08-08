@@ -13,4 +13,18 @@ import bootstrap from '../main.server';
 })
 export class AppComponent {
   title = 'version18app';
+  isAdmin: boolean = true;
+  showI: any ; 
+  ingredientList = [
+    {name: 'noodles', quantity: 1},
+    {name: 'miso broth', quantity: 1},
+    {name: 'egg', quantity: 2},
+  ];
+  onclick(){
+    this.isAdmin = false;
+  }
+  showIF(){
+    this.isAdmin = true;
+    this.showI = true
+  }
 }

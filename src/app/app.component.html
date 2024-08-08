@@ -1,4 +1,23 @@
 <div class = "header">
   <app-header></app-header>
 </div>
+ Using with If 
+@if (isAdmin) {
+  <button (click)="onclick()">Erase database</button>
+}
+
+Using with Else Block
+@if (isAdmin) {
+  <button>Erase database</button>
+}@else if (!isAdmin && showI) {
+  <div style="background-color: black;">
+djkfhgdskfgkdgfkhgf
+  </div>
+} @else {
+  <p (click)="showIF()">You are not authorized.</p>
+}
+
+@for (ingredient of ingredientList; track ingredient.name) {
+  <li>{{ ingredient.quantity }} - {{ ingredient.name }}</li>
+}
 <router-outlet />
