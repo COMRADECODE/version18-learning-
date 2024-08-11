@@ -1,0 +1,20 @@
+
+<div class="height">
+<div fxLayout="row" fxLayoutAlign="center center">
+<h1>How can we help?</h1>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <mat-form-field class="mat-input-underline">
+        <!-- <mat-label>Number</mat-label> -->
+        <input type="text"
+               placeholder="Search"
+               aria-label="Search"
+               matInput
+               size="50"
+               [matAutocomplete]="auto">
+         <mat-autocomplete #auto="matAutocomplete">
+        </mat-autocomplete>
+      </mat-form-field>
+</div>
+
+</div>
